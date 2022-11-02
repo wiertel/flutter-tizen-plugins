@@ -1,0 +1,40 @@
+name: firebase_auth_desktop_example
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  crypto: ^3.0.1
+  desktop_webview_auth: ^0.0.9
+  firebase_auth: ^3.4.1
+  firebase_auth_tizen: ^0.1.0
+  firebase_core: ^1.19.1
+  firebase_core_tizen: ^0.1.0
+  flutter:
+    sdk: flutter
+  flutter_signin_button: ^2.0.0
+  sign_in_with_apple: ^3.3.0
+  webview_auth_tizen:
+    git: https://github.com/JRazek/webview_auth_tizen
+
+dependency_overrides:
+  firebase_auth_tizen:
+    path: ../
+  firebase_core_tizen:
+    path: ../../firebase_core_tizen
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
